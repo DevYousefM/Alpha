@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="169" height="169" viewBox="0 0 169 169">
+  <g id="Group_1224" data-name="Group 1224" transform="translate(-1370 -13238)">
+    <g id="Ellipse_171" data-name="Ellipse 171" transform="translate(1370 13238)" fill="none" stroke="#1f77bb" stroke-width="3">
+      <circle cx="84.5" cy="84.5" r="84.5" stroke="none"/>
+      <circle cx="84.5" cy="84.5" r="83" fill="none"/>
+    </g>
+    <g id="TRUST_WALLET" data-name="TRUST WALLET" transform="translate(1403 13261)">
+      <path id="Path_1638" data-name="Path 1638" d="M51.359,0a247.837,247.837,0,0,0,51.357,17.262c.058,50.319-.995,69.9-13.426,83.111C81.6,108.549,64.2,113.8,51.357,123.936,38.518,113.8,21.119,108.549,13.424,100.373.995,87.163-.058,67.58,0,17.262A247.817,247.817,0,0,0,51.359,0Z" transform="translate(0.002)" fill="#1f77bb"/>
+      <path id="Path_1639" data-name="Path 1639" d="M109.274,77.13a177.049,177.049,0,0,0,37.672,13.154c.043,38.347-.729,53.27-9.847,63.337-5.645,6.232-18.406,10.231-27.825,17.956-9.417-7.726-22.179-11.726-27.825-17.956-9.118-10.067-9.89-24.99-9.847-63.337A177.083,177.083,0,0,0,109.274,77.13Z" transform="translate(-57.913 -62.386)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

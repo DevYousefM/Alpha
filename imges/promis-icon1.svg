@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="129" viewBox="0 0 128 129">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.943" y1="0.5" x2="0" y2="0.834" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#48bdee"/>
+      <stop offset="1" stop-color="#51519e"/>
+    </linearGradient>
+  </defs>
+  <g id="تأمين_بياناتك" data-name="تأمين بياناتك" transform="translate(-1652 -8027)">
+    <g id="Ellipse_29" data-name="Ellipse 29" transform="translate(1652 8027)" stroke="#000" stroke-width="12">
+      <ellipse cx="64" cy="64.5" rx="64" ry="64.5" stroke="none"/>
+      <ellipse cx="64" cy="64.5" rx="58" ry="58.5" fill="none"/>
+    </g>
+    <path id="lock-solid" d="M18.864,18.864v6.288h20.96V18.864a10.48,10.48,0,1,0-20.96,0ZM10.48,25.152V18.864a18.864,18.864,0,1,1,37.727,0v6.288h2.1a8.392,8.392,0,0,1,8.384,8.384V58.687A8.392,8.392,0,0,1,50.3,67.071H8.384A8.392,8.392,0,0,1,0,58.687V33.535a8.392,8.392,0,0,1,8.384-8.384Z" transform="translate(1687 8058)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,106 @@
+:root{
+    --main-color:#389ED8;
+    --main-transition:0.5s;
+    --second-color:#0073b9;
+    --btn-back:#0074b7;
+    --clients:#000000  #009FDB;
+    --pages:#124BF5 #02BFE6;
+    --four-color:#45E900;
+    --dark-color:#00175c;
+}
+
+.arrow {
+    color: red;
+    cursor: pointer;
+  }
+  .information h3{
+    color: red;
+    text-align: end;
+    margin-right: 69px;
+    font-size: 22px;
+  }
+  .information p{
+    color: black;
+    text-align: end;
+    margin-right: 69px;
+    padding-left: 49px;
+    line-height: 40px;
+    font-size: 22px;
+  }
+  .instructions {
+    display: none;
+    padding-top: 10px;
+    
+  }
+  
+  .information.active-info .instructions {
+    display: block;
+  }
+  .numbers,.pay-account{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 69px;
+
+    align-items: center;
+ 
+  }
+  .numbers .des{
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+    align-items: center;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 27px;
+}
+.validate-number.des {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+h3.copy {
+    color: var(--main-color);
+}
+.information h3{
+  cursor: pointer;
+}
+@media (max-width:1100px) {
+  .validate-number.des ,.pay-cards .pay-cards-content .process-number{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 36px;
+    align-items: center;
+}
+.numbers{
+  display: block;
+  margin-left: 0;
+
+}
+.pay-account {
+  margin-left: 0;
+  justify-content: center;
+  align-items: baseline;
+  gap: 16px;
+}
+.pay-account .validate-number h3 {
+font-size: 20px;
+}
+.pay-cards .pay-cards-content .process-number h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.validate-number.des, .pay-cards .pay-cards-content .process-number {
+ 
+  margin-right: 5px;
+}
+.information p {
+
+  margin-right: 23px;
+
+}
+.methods .methods-content .method-box {
+width: 100%;
+}
+}

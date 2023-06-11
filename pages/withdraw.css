@@ -1,0 +1,235 @@
+:root{
+    --main-color:#389ED8;
+    --main-transition:0.5s;
+    --second-color:#0073b9;
+    --btn-back:#0074b7;
+    --clients:#000000  #009FDB;
+    --pages: #02BFE6;
+    --four-color:#00920f
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'cai' !important;
+
+
+}
+
+.our-nav{
+    padding-bottom: 15px;
+}
+
+.methods,.pay-cards{
+    margin-top: 70px;
+}
+.methods .methods-content,.pay-cards .pay-cards-content{
+    width: 70%;
+    margin: auto;
+}
+.pay-cards .pay-cards-content .pay-box{
+    display: none;
+    margin-bottom: 33px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 3px #000000b5;
+}
+.methods .methods-content .method-box{
+    display: flex;
+    justify-content: space-between;
+    height: 97px;
+    border-radius: 7px;
+    padding: 15px;
+    transition: var(--main-transition);
+    align-items: center;
+    margin-bottom: 33px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #000000b5;
+}
+.methods .methods-content .method-box:hover{
+    transform: scale(1.05);
+}
+.pay-cards .pay-cards-content .pay-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: white;
+   
+}
+select#currency {
+    width: 122px;
+    text-align: center;
+
+}
+select#currency option{
+    text-transform: uppercase;
+
+    font-size: 25px;
+}
+select#currency option span{
+    text-transform: uppercase;
+    margin-right: 5px;
+    background-color: black
+}
+
+.methods .methods-content .method-box .method-info,
+.pay-cards .pay-cards-content .pay-heading .pay-info
+{
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+.methods .methods-content .method-box img,
+.pay-cards .pay-cards-content .pay-heading img {
+    width: 108px;
+    border-radius: 12px;
+    margin-left: 20px;
+  
+}
+.methods .methods-content .method-box h3 ,
+.pay-cards .pay-cards-content .pay-heading h3{
+font-weight: bolder;
+}
+.methods .methods-content .method-box .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 6px solid var(--main-color);
+}
+.pay-cards .pay-cards-content .pay-heading .pay-info {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    font-weight: bolder;
+}
+.pay-heading .pay-info .pay-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  var(--main-color);
+}
+.pay-cards .pay-cards-content .inputs{
+    display: flex;
+    justify-content: center;
+    /* width: 200px; */
+    gap: 20px;
+    margin-top: 20px;
+}
+.pay-cards .pay-cards-content .process-number{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin-right: 72px;
+    margin-bottom: 31px;
+    margin-top: 20px;
+}
+.pay-cards .pay-cards-content .process-number h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.pay-cards .pay-cards-content .card-number{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.request{
+    background-color: var(--main-color);
+    border: none;
+    width: 233px;
+    height: 72px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 28px;
+    font-weight: bolder;
+    margin-bottom: 21px;
+}
+input.form-control {
+    text-align: end;
+    padding: 15px;
+    width: 40%;
+}
+input.form-control.num {
+  
+    width: 70%;
+    margin: auto;
+}
+.pargaph {
+    margin-top: 19px;
+    padding-bottom: 110px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bolder;
+}
+.active{
+    background-color: var(--main-color);
+}
+.show{
+    display: block !important;
+}
+
+/* ***************************************** mobile style                     **************************** */
+@media (max-width:1100px) {
+    .methods .methods-content, .pay-cards .pay-cards-content {
+        width: 100%;
+       
+    }
+    .methods .methods-content .method-box {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+      
+    }
+    .methods .methods-content .method-box img, .pay-cards .pay-cards-content .pay-heading img {
+        width: 104px;
+        margin-left: 0;
+    }
+    .methods .methods-content .method-box .method-info, .pay-cards .pay-cards-content .pay-heading .pay-info {
+ 
+        gap: 22px;
+      
+    }
+    .methods .methods-content .method-box h3, .pay-cards .pay-cards-content .pay-heading h3 {
+        font-size: 17px;
+        margin-left: 10px;
+        white-space: nowrap;
+    }
+    .pay-cards .pay-cards-content .pay-box {
+       
+        margin: auto;
+        margin-bottom: 40px;
+ 
+    }
+    input.form-control {
+ 
+        font-size: 12px;
+      
+    }
+    .methods .methods-content .method-box img,
+.pay-cards .pay-cards-content .pay-heading img {
+  
+    border-radius: 12px;
+ 
+}
+.pargaph {
+ 
+    font-size: 20px;
+   
+}
+.pay-cards .pay-cards-content .process-number {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 31px;
+    margin-top: 20px;
+}
+.methods .methods-content .method-box:hover{
+    transform: none;
+}
+}

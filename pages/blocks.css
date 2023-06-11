@@ -1,0 +1,29 @@
+.article{
+    text-align: center;
+    margin-top: 50px;
+}
+.article h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+.article .article-content{
+    padding-bottom: 150px;
+    margin-top: 70px;
+}
+.article .article-content p ,.article .article-content h4 ul li{
+    color: white;
+    line-height: 40px;
+    margin-top: 37px;
+    font-size: 24px;
+    text-align: end;
+    word-spacing: 3.1999999999999993px;
+
+}
+/* ******************************    mobile style                  ************************************************* */
+@media (max-width:1100px) {
+    .article .article-content p, .article .article-content h4 {
+        font-size: 17px;
+    
+    }
+}

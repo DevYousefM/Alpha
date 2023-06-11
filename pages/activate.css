@@ -1,0 +1,156 @@
+:root{
+    --main-color:#389ED8;
+    --main-transition:0.5s;
+    --second-color:#0073b9;
+    --btn-back:#0074b7;
+    --clients:#000000  #009FDB;
+    --pages:#124BF5 #02BFE6;
+    --four-color:#45E900;
+    --dark-color:#00175c;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'cai' !important;
+    background-color:var(--dark-color);
+}
+.our-nav{
+    padding-bottom: 10px;
+}
+.activate-header{
+    background-image: url("../imges/activate.png");
+    background-size: cover;
+    padding-bottom: 120px;
+    width: 100%;
+    text-align: end;
+    color: white;
+ 
+}
+
+.minmax {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 15px;
+    justify-content: center;
+    gap: 19px;
+    margin-left: 21px;
+}
+.activate-header h2{
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 48px;
+}
+.input-box  label {
+    font-size: 20px;
+    display: block;
+    white-space: nowrap;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .activate-inputs form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 36px;
+}
+  
+
+ .activate-inputs .input-box select, input[type="number"], input[type="text"] {
+    font-size: 23px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-top: 6px;
+  }
+  .activate-inputs{
+    display: flex;
+    justify-content: end;
+  }
+  .activate-inputs .input-box input[type="submit"] {
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+.activate-inputs .input-box select {
+    font-size: 18px;
+    background-color: white;
+    padding-right: 20px;
+   text-transform: capitalize;
+    direction: rtl;
+   
+    padding-right: 20px;
+}
+input[type="submit"] {
+  margin-left: auto;
+  width: 236px;
+  height: 63px;
+  border-radius: 15px;
+  border: none;
+  font-size: 23px;
+  transform: translateX(143px);
+}
+.activate-inputs  .input-box select  option{
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 27px;
+    border: 1px solid black;
+}
+.activate-inputs  .input-box.coins select  option
+  {
+text-transform: uppercase;
+}
+
+  
+  select option:checked {
+    background-color: #f2f2f2;
+  
+  }
+  select option:hover {
+    background-color: #f2f2f2;
+  
+  }
+/* **************************************   mobile style                 *******************************************************************/
+@media (max-width:1100px) {
+
+.activate-header h2 {
+    font-size: 30px;
+    line-height: 50px;
+}
+.activate-inputs {
+display: block
+}
+
+.activate-inputs form{
+  display: block;
+  text-align: center;
+}
+
+.input-box {
+    margin-bottom: 35px;
+}
+input[type="submit"] {
+  transform: none;
+
+}
+.activate-inputs .input-box select {
+
+  width: 100%;
+
+}
+.activate-inputs .input-box select, input[type="number"], input[type="text"] {
+
+  width: 100%;
+
+}
+}

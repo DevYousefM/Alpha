@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#51529f"/>
+      <stop offset="1" stop-color="#49afe4"/>
+    </linearGradient>
+  </defs>
+  <g id="الحماية" transform="translate(-1652 -8285)">
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(1652 8285)" stroke="#000" stroke-width="12">
+      <circle cx="64" cy="64" r="64" stroke="none"/>
+      <circle cx="64" cy="64" r="58" fill="none"/>
+    </g>
+    <path id="shield-solid" d="M34,0a4.666,4.666,0,0,1,1.9.406L62.58,11.6a8.7,8.7,0,0,1,5.426,8.017c-.071,13.9-5.851,39.34-30.263,50.9a8.739,8.739,0,0,1-7.481,0C5.851,58.961.07,33.524,0,19.621A8.7,8.7,0,0,1,5.426,11.6L32.118.406A4.552,4.552,0,0,1,34,0Z" transform="translate(1682 8313)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

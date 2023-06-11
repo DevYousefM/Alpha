@@ -1,0 +1,60 @@
+:root{
+    --main-color:#389ED8;
+    --main-transition:0.5s;
+    --second-color:#0073b9;
+    --btn-back:#0074b7;
+    --clients:#000000  #009FDB;
+    --pages: #02BFE6;
+    --four-color:#45E900
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'cai' !important;
+}
+.control{
+   
+}
+.control .control-nav{
+    background-color: var(--main-color);
+    padding: 8px;
+}
+.control .control-nav-content{
+   
+    text-align: center;
+}
+.control .control-nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.control .control-nav ul li{
+list-style: none;
+color: white;
+font-size: 30px;
+cursor: pointer;
+}
+.control .control-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+.control .control-content .pay{
+    margin: auto;
+}
+.control .control-content .pay img{
+    
+    border-radius: 8px;
+    height: 48px;
+}
+.control .control-content .pay h3{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.section {
+    margin-top: 15px;
+}
+@media (max-width:1100px) {
+    .control .control-content .pay{
+        margin-bottom: 40px;
+    }
+}

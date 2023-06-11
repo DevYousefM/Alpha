@@ -1,0 +1,193 @@
+:root{
+    --main-color:#389ED8;
+    --main-transition:0.5s;
+    --second-color:#0073b9;
+    --btn-back:#0074b7;
+    --clients:#000000  #009FDB;
+    --pages:#124BF5 #02BFE6;
+    --four-color:#45E900;
+    --dark-color:#00175c;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'cai' !important;
+    background-color:var(--dark-color);
+}
+.our-nav{
+    padding-bottom: 10px;
+}
+.bots{
+    background-image: url("../imges/back3.png");
+    background-size: cover;
+}
+.bot-header{
+    background-image: url(../imges/header.jpg);
+    background-size: cover;
+    height: 852px;
+    width: 100%;
+}
+.bots .heading{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    align-items: center;
+    margin-bottom: 57px;
+    
+}
+.bots .heading h2{
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+      
+}
+.bots .heading img{
+    width: 70px;
+}
+.bots  .bot-box,.bots  .mobile-bot-box{
+    border-radius: 36px;
+    color: black;
+    padding: 27px;
+    font-size: px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background-color: var(--main-color);
+    margin-bottom: 70px;
+}
+.bots  .bot-box h3,.bots  .mobile-bot-box h3{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #ffffffeb;
+    margin-bottom: 30px;
+}
+.bots  .bot-box .bo,.bots  .mobile-bot-box .bo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    color: rgba(255, 255, 255, 0.649);
+    padding-bottom: 34px;
+}
+.bots  .bot-box .bo h3,.bots  .mobile-bot-box .bo h3{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-bottom: 0;
+}
+.bots  .bot-box .bo h3 span ,.bots  .mobile-bot-box .bo h3 span {
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 27px;
+}
+.bots  .bot-box .bo h3 span i {
+
+}
+.bots .bot-box h2,.bots .mobile-bot-box h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-align: center;
+}
+.btn-toactive{
+    background-color: var(--dark-color);
+    width: 207px;
+    border-radius: 46px;
+    color: white;
+    height: 83px;
+    font-size: 28px;
+    padding-top: 19px;
+    margin: auto;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btn-toactive a{
+    color: white;
+}
+.article{
+    text-align: center;
+    margin-top: 50px;
+}
+.article h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+}
+.article .article-content{
+    padding-bottom: 150px;
+}
+.article .article-content p ,.article .article-content h4{
+    color: white;
+    line-height: 47px;
+    margin-top: 70px;
+    font-size: 24px;
+    text-align: end;
+    word-spacing: 3.1999999999999993px;
+
+}
+.bots .mobile-bot-box{
+    display: none;
+}
+/* *************************************  mobile  style              ********************************************** */
+@media (max-width:1100px) {
+    .bots .bot-box{
+        display: none;
+    }
+    .bots .mobile-bot-box{
+        display: block;
+    }
+    .bot-header {
+        height: 234px;
+    }
+    .bots .heading {
+
+        margin-top: 68px;
+      
+    }
+    .bots .heading img {
+        width: 41px;
+    }
+    .bots .heading h2 {
+
+        font-size: 25px;
+    }
+    .bots .mobile-bot-box{
+        width: 100%;
+    }
+    .bots .mobile-bot-box .bo{
+        margin-bottom: 7px;
+    }
+    .bots .mobile-bot-box h3 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        white-space: nowrap;
+    }
+    .bots .heading {
+
+        gap: 12px;
+     
+    }
+    .bots .mobile-bot-box .bo h3 {
+        font-size: 22px;
+    }
+    .bots .mobile-bot-box .moadal{
+        display: block;
+    }
+    .bots .mobile-bot-box .moadal h3{
+        margin-bottom: 15px;
+    }
+    .article h2 {
+        font-size: 25px;
+    }
+    .article .article-content p, .article .article-content h4 {
+
+        font-size: 19px;
+
+    }
+}
