@@ -1,0 +1,145 @@
+:root{
+    --main-color:#389ED8;
+    --main-transition:0.5s;
+    --second-color:#0073b9;
+    --btn-back:#0074b7;
+    --clients:#000000  #009FDB;
+    --pages:#124BF5 #02BFE6;
+    --four-color:#45E900
+}
+
+
+@font-face {
+    src: url('../fonts/Cairo-VariableFont_slnt\,wght.ttf');
+    font-family: 'Cai';
+  }
+ .messages{
+    display: none;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:99999999;
+	position: fixed;
+	transition: all 0.5s;
+	
+ }
+ .active-messages{
+    display: grid;
+	place-content: center;
+ }
+ .messages  div{
+    margin: 0.5em;
+	padding: 0.8em !important;
+	border-radius: 10px;
+	width: 500px;
+    
+ }
+
+.messages .reject, .messages .accept, .messages .pending{
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+.messages .reject button, .messages .accept button, .messages .pending button{
+    width: 69px;
+    height: 44px;
+    background-color: var(--main-color);
+    font-size: 20px;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.messages .reject h2, .messages.accept h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.messages .reject .reject-img  ,.messages  .pending-img  ,.messages .accept-img {
+   width: 100%;
+   margin-left: 0;
+}
+.messages .reject .reject-img h2 ,.messages .messages .pending-img h2 {
+    background-color: red ;
+    width: 80px;
+    margin: auto;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: white;
+    /* padding-bottom: 10px; */
+    font-family: cursive;
+}
+.messages .reject  i  {
+    background-color: red !important;
+    padding: 16px;
+    font-size: 50px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: white;
+    
+    
+}
+.messages .pending i{
+    background-color: white;
+    color: #02BFE6 !important;
+   
+    font-size: 110px;
+   
+   
+    height: 90px;
+ 
+}
+.messages .accept-img i{
+    background-color: green;
+    padding: 8px;
+    font-size: 70px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+.messages .accept-img h2 i{
+    color: white;
+
+}
+
+element.style {
+}
+.messages h2 {
+    color: #000000;
+}
+.messages a {
+    border-radius: 14px;
+    display: flex;
+    background-color: var(--main-color);
+    width: 100px;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    height: 56px;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 21px;
+}
+.messages img {
+    width: 35px;
+    height: 30px;
+}
+
+@media (max-width:774px){
+    .messages  div{
+        margin: 0.5em;
+        padding: 0.8em !important;
+        border-radius: 10px;
+        width: 270px;
+        
+     }
+    .message .reject,.message .accept,.message .pending{
+       
+        width: 80%;
+       
+    }
+}

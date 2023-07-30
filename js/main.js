@@ -1,12 +1,45 @@
+const urlPath = window.location.pathname;
+
+// Extract the code from the URL path
+
+const copyButtons = document.querySelectorAll('.copy');
+copyButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+ 
+    const contentToCopy = button.previousElementSibling;
+
+    // Create a range object to select the content
+    const range = document.createRange();
+    range.selectNode(contentToCopy);
+
+    // Select the content
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    // Copy the selected content
+    document.execCommand('copy');
+
+    // Clear the selection
+    selection.removeAllRanges();
+
+    // Change the button text temporarily
+    button.textContent = 'تم النسخ';
+    setTimeout(() => {
+      button.textContent = 'نسخ';
+    }, 2000);
+  });
+});
 document.getElementById("menu").onclick=()=>{
     document.getElementById("setting").style.left="0px"
 }
 document.getElementById("close").onclick=()=>{
-    document.getElementById("setting").style.left="-450px"
+    document.getElementById("setting").style.left="-1500px"
 }
 document.getElementById("btn-show").onclick=()=>{
   document.getElementById("buttons").classList.add("show")
 }
+
 // slider 1
 const slides = document.querySelectorAll('.slider img');
 const arrows = document.querySelectorAll('.slider-controls .arrow .sahm');
@@ -214,3 +247,5 @@ $(document).ready(function() {
     goToNextSlide3();
   });
 });
+
+

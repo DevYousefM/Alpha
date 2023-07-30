@@ -1,0 +1,30 @@
+
+body{
+    background-color: #389ed8 !important;
+}
+.content ul li a {
+    color: white;
+    
+}
+.content ul li a h4 {
+    font-size: 25px !important;
+    
+}
+
+
+#blog-content {
+    color: white;
+    font-size: 25px !important;
+    line-height: 50px;
+}
+@media (max-width: 1100px){
+    .content ul li a h4 {
+        font-size: 15px !important;
+        
+    }
+    #blog-content {
+        color: white;
+        font-size: 15px !important;
+        line-height: 50px;
+    }
+}

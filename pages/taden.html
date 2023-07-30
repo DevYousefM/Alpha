@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تداول الان مع افضل منصة في الشرق الأوسط و ابداء في تحقيق الارباح ">
+    <link rel="icon" type="image/x-icon" href="../imges/LOGO11-01.png">
     <title> تعدين سحابي</title>
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -11,16 +13,21 @@
    
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./messages.css">
     <link rel="stylesheet" href="./taden.css">
-
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body  >
+    <div class="messages   mb-3">
+     
+    </div>
     <div class="our-nav">
         <div class="nav-container">
             <div class="our-nav-content">
                 <div class="icons">
                     <i class="fa-solid fa-bars one" id="menu"></i>
-                    <div class="user"><a href="./user.html"><i class="fa-solid fa-user "></i></a></div>    
+                    <div class="user"><a href="./user.html" class="user-page"><i class="fa-solid fa-user "></i></a></div>    
                 </div>
                 <div class="links">
                     <a href="./taden.html"> <img src="../imges/taden-nav.png" alt="" srcset=""> <h3>تعدين سحابي</h3></a>
@@ -29,17 +36,17 @@
                     <a href="../index.html"> <img src="../imges/home-nav.svg" alt="" srcset=""> <h3> الرئيسيه</h3></a>
                 </div>
                 <div class="logo">
-                    <img src="../imges/LOGO POOL.png" alt="" srcset="">
+                    <a href="../index.html"><img  src="../imges/LOGO POOL.png" alt="" srcset=""></a>
                 </div>
                <!-- start pages -->
                <div class="side-bar" id="setting">
-                <button type="button" class="btn-close btn-close-white m-auto close " id="close" ></button> 
+                <button type="button" class="btn-close  m-auto close " id="close" ></button> 
                 <div class="side-bar-content">
                     <a class="side" href="../index.html">
                         <img src="../imges/home-icon.svg" alt="" srcset="">
                         <h3>الصفحه الرئيسيه</h3>
                     </a>
-                    <a class="side" href="./user.html">
+                    <a class="side user-page" href="./user.html">
                         <img src="../imges/circle-user-solid (1).svg" alt="" srcset="">
                         <h3> حسابي الشخصي</h3>
                     </a>
@@ -68,7 +75,7 @@
                         <h3> حول الشركه </h3>
                     </a>
                     <a class="side" href="./questions.html">
-                        <img src="../imges/Q&A.png" alt="" srcset="">
+                        <img style="width: 45px;" src="../imges/A_Q.svg" alt="" srcset="">
                         <h3> سؤال وجواب </h3>
                     </a>
                     <a class="side" href="./bolcks.html">
@@ -95,195 +102,31 @@
                         <img src="../imges/download-solid.png" alt="" srcset="">
                         <h3> تثبيت التطبيق    </h3>
                     </a>
+                    <a class="side" href="./academy.html">
+                        <img src="../imges/Group 2269.svg" alt="" srcset="">
+                        <h3>ألفا اكاديمي</h3>
+                    </a>
                 </div>
                </div>
             <!-- end pages -->
             </div>
         </div>
-    </div>    
+    </div>  
+        
         <div class="page-content ">
+           
             <div class="heading">
-                <h2>التعدين الفردي</h2>
+                <h2 class="g1">التعدين الفردي</h2>
             </div>
-            <div class="packages">
+            <div class="packages ">
                 
-                <div class="container">
+                <div class="container ">
                    
                     <div class="packages-content">
-                        
-                        <div class="package">
-                            <h2>تعدين  بيتكوين</h2>
-                            <div class="pac">
-                                <div class="btn-box">
-                                    <button class="bt1">
-                                        + 14 %
-                                    </button>
-                                    <button class="bt2">
-                                        19.910.40
-                                    </button>
-                                </div>
-                                <div class="img-box">
-                                    <h3>btc</h3>
-                                    <img src="../imges/b.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="pac">
-                                <h3 > <span>28</span>  اسبوع </h3>
-                                <h3> مدة التعدين</h3>
-                            </div>
-                            <div class="pac">
-                                <h3> 214 $</h3>
-                                <h3> مصاريف التشغيل</h3>
-                            </div>
-                            <div class="pac">
-                                <h3 >gh/s 360</h3>
-                                <h3> معدل التجزئه</h3>
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3 style="direction:ltr"> 1 btc  </h3>
-                                    <h3>  العائد النهائي</h3>
-                                </div>
-                                
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3> 3000 $ </h3>
-                                    <h3>  سعر الخطه</h3>
-                                </div>
-                            </div>
-                            <div class="btn-taden"> بدء التعدين</div>
-                        </div>
-                        <div class="package">
-                            <h2>تعدين  إيثريوم</h2>
-                            <div class="pac">
-                                <div class="btn-box">
-                                    <button class="bt1">
-                                        + 14 %
-                                    </button>
-                                    <button class="bt2">
-                                        19.910.40
-                                    </button>
-                                </div>
-                                <div class="img-box">
-                                    <h3>eth</h3>
-                                    <img src="../imges/ETH.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="pac">
-                                <h3 > <span>25 </span>  اسبوع </h3>
-                                <h3> مدة التعدين</h3>
-                            </div>
-                            <div class="pac">
-                                <h3> 157 $</h3>
-                                <h3> مصاريف التشغيل</h3>
-                            </div>
-                            <div class="pac">
-                                <h3 >gh/s 220</h3>
-                                <h3> معدل التجزئه</h3>
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3 style="direction:ltr"> 6 eth  </h3>
-                                    <h3>  العائد النهائي</h3>
-                                </div>
-                                
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3> 2500 $ </h3>
-                                    <h3>  سعر الخطه</h3>
-                                </div>
-                            </div>
-                            <div class="btn-taden"> بدء التعدين</div>
-                        </div>
-                        <div class="package">
-                            <h2>تعدين  لايت كوين</h2>
-                            <div class="pac">
-                                <div class="btn-box">
-                                    <button class="bt1">
-                                        + 14 %
-                                    </button>
-                                    <button class="bt2">
-                                        19.910.40
-                                    </button>
-                                </div>
-                                <div class="img-box">
-                                    <h3>ltc</h3>
-                                    <img src="../imges/LTC.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="pac">
-                                <h3 > <span>20 </span>  اسبوع </h3>
-                                <h3> مدة التعدين</h3>
-                            </div>
-                            <div class="pac">
-                                <h3> 135 $</h3>
-                                <h3> مصاريف التشغيل</h3>
-                            </div>
-                            <div class="pac">
-                                <h3 >gh/s 290</h3>
-                                <h3> معدل التجزئه</h3>
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3 style="direction:ltr"> 40 ltc  </h3>
-                                    <h3>  العائد النهائي</h3>
-                                </div>
-                                
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3> 1000 $ </h3>
-                                    <h3>  سعر  الخطه</h3>
-                                </div>
-                            </div>
-                            <div class="btn-taden"> بدء التعدين</div>
-                        </div>
-                        <div class="package">
-                            <h2>تعدين  بينانس كوين</h2>
-                            <div class="pac">
-                                <div class="btn-box">
-                                    <button class="bt1">
-                                        + 14 %
-                                    </button>
-                                    <button class="bt2">
-                                        19.910.40
-                                    </button>
-                                </div>
-                                <div class="img-box">
-                                    <h3>bnb</h3>
-                                    <img src="../imges/BNB.png" alt="" srcset="">
-                                </div>
-                            </div>
-                            <div class="pac">
-                                <h3 > <span>22 </span>  اسبوع </h3>
-                                <h3> مدة التعدين</h3>
-                            </div>
-                            <div class="pac">
-                                <h3> 173 $</h3>
-                                <h3> مصاريف التشغيل</h3>
-                            </div>
-                            <div class="pac">
-                                <h3 >gh/s 260</h3>
-                                <h3> معدل التجزئه</h3>
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3 style="direction:ltr"> 24 bnb  </h3>
-                                    <h3>  العائد النهائي</h3>
-                                </div>
-                                
-                            </div>
-                            <div class="last">
-                                <div class="pac">
-                                    <h3> 1500 $ </h3>
-                                    <h3>  سعر الخطه</h3>
-                                </div>
-                            </div>
-                            <div class="btn-taden"> بدء التعدين</div>
-                        </div>
-                        
+                   
+                        <div class="row gx-2" id="single">
+                           
+                    </div>
                     </div>
                 </div>
             </div>
@@ -291,15 +134,17 @@
             <div class="packages-group">
                 <div class="container">
                     <div class="heading">
-                        <h2>التعدين الجماعي</h2>
+                        <h2 class="g g2">التعدين الجماعي</h2>
                     </div>
-                    <div class="packages-content">
+                    <div class="packages-content" >
+                        <div class="row" id="mass">
+                        <!-- <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2>تعدين  افالانش</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g1.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">avax</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">avax</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -315,14 +160,14 @@
                                 <h3> توزيعات الارباح </h3>
                             </div>
                             <div class="pac">
-                                <h3 >usdt 80 = %6</h3>
+                                <h3 >usdt 69 = %6</h3>
                                 <h3> العائد الاسبوعي</h3>
                             </div>
                             <div class="last">
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> avax 350 +  <img src="../imges/t.png" alt="" srcset=""> 1656 </h3>
+                                         <h3 style="direction: ltr;"> avax 350 +  <img src="../imges/t.svg" alt="" srcset=""> 1656 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -336,12 +181,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2>تعدين  اكس ار بي </h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g2.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">xrp</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">xrp</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -357,14 +204,14 @@
                                 <h3> توزيعات الارباح </h3>
                             </div>
                             <div class="pac">
-                                <h3 >usdt 80 = %6</h3>
+                                <h3 >usdt 79,2 = %6</h3>
                                 <h3> العائد الاسبوعي</h3>
                             </div>
                             <div class="last">
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> xrp 15.000 +  <img src="../imges/t.png" alt="" srcset=""> 2.088 </h3>
+                                         <h3 style="direction: ltr;"> xrp 15.000 +  <img src="../imges/t.svg" alt="" srcset=""> 1900,8 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -372,18 +219,20 @@
                             </div>
                             <div class="last">
                                 <div class="pac">
-                                    <h3> 1150 $ </h3>
+                                    <h3> 1320 $ </h3>
                                     <h3>  سعر الاشتراك</h3>
                                 </div>
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2>تعدين  سولانا</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g3.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">sol</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">sol</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -406,7 +255,7 @@
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> sol 300 +  <img src="../imges/t.png" alt="" srcset=""> 1740 </h3>
+                                         <h3 style="direction: ltr;"> sol 300 +  <img src="../imges/t.svg" alt="" srcset=""> 2088 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -420,12 +269,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2>تعدين  بوليجون</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g4.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">matic</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">matic</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -441,14 +292,14 @@
                                 <h3> توزيعات الارباح </h3>
                             </div>
                             <div class="pac">
-                                <h3 >usdt 37 = %5</h3>
+                                <h3 >usdt 37,5 = %5</h3>
                                 <h3> العائد الاسبوعي</h3>
                             </div>
                             <div class="last">
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> matic 3500 +  <img src="../imges/t.png" alt="" srcset=""> 889 </h3>
+                                         <h3 style="direction: ltr;"> matic 3500 +  <img src="../imges/t.svg" alt="" srcset=""> 900 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -462,12 +313,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
-                        <div class="package">
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
+                        <div class="package ">
                             <h2>تعدين  ترون</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g5.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">trx</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">trx</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -490,7 +343,7 @@
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> trx 40.000 +  <img src="../imges/t.png" alt="" srcset=""> 1104 </h3>
+                                         <h3 style="direction: ltr;"> trx 40.000 +  <img src="../imges/t.svg" alt="" srcset=""> 1104 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -504,12 +357,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2> تعدين  كاردانو</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g6.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">ada</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">ada</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -525,14 +380,14 @@
                                 <h3> توزيعات الارباح </h3>
                             </div>
                             <div class="pac">
-                                <h3 >usdt 52 = %5</h3>
+                                <h3 >usdt 52,5 = %5</h3>
                                 <h3> العائد الاسبوعي</h3>
                             </div>
                             <div class="last">
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> ada 11.000 +  <img src="../imges/t.png" alt="" srcset=""> 1248 </h3>
+                                         <h3 style="direction: ltr;"> ada 11.000 +  <img src="../imges/t.svg" alt="" srcset=""> 1260 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -546,12 +401,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2>تعدين  بولكا دوت</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g7.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">dot</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">dot</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -567,14 +424,14 @@
                                 <h3> توزيعات الارباح </h3>
                             </div>
                             <div class="pac">
-                                <h3 >usdt 5 = %5</h3>
+                                <h3 >usdt 6 = %6</h3>
                                 <h3> العائد الاسبوعي</h3>
                             </div>
                             <div class="last">
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> dot 1000 +  <img src="../imges/t.png" alt="" srcset=""> 288 </h3>
+                                         <h3 style="direction: ltr;"> dot 100 +  <img src="../imges/t.svg" alt="" srcset=""> 144 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -588,12 +445,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 mx-auto">
                         <div class="package">
                             <h2>تعدين  داي</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g8.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">dai</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">dai</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -609,14 +468,14 @@
                                 <h3> توزيعات الارباح </h3>
                             </div>
                             <div class="pac">
-                                <h3 >usdt 12 = %5</h3>
+                                <h3 >usdt 12,5 = %5</h3>
                                 <h3> العائد الاسبوعي</h3>
                             </div>
                             <div class="last">
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> dai 1000 +  <img src="../imges/t.png" alt="" srcset=""> 288 </h3>
+                                         <h3 style="direction: ltr;"> dai 1000 +  <img src="../imges/t.svg" alt="" srcset=""> 300</h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -630,12 +489,14 @@
                             </div>
                             <div class="btn-taden"> بدء التعدين</div>
                         </div>
+                    </div>
+                        <div class="mb-5 col-md-5 ms-md-5">
                         <div class="package">
                             <h2>تعدين  تشين لينك</h2>
-                            <div class="pac">
+                            <div class="pac f">
                                 <div class="btn-box">
                                      <img src="../imges/g9.png" alt="" srcset="">
-                                    <h3 style="color: white; font-size:40px">link</h3>
+                                    <h3 class="my-auto" style="color: white; font-size:40px">link</h3>
                                 </div>
                                 <div class="two">
                                     <h4>$ 19 . 910</h4>
@@ -658,7 +519,7 @@
                                 <div class="pac">
                                     <div class="h3-box">
                     
-                                         <h3 style="direction: ltr;"> link 300 +  <img src="../imges/t.png" alt="" srcset=""> 600 </h3>
+                                         <h3 style="direction: ltr;"> link 300 +  <img src="../imges/t.svg" alt="" srcset=""> 600 </h3>
                                     </div>
                                     <h3>  العائد النهائي</h3>
                                     
@@ -673,6 +534,8 @@
                             <div class="btn-taden"> بدء التعدين</div>
                         
                     </div>
+                </div> -->
+            </div>
                 </div>
             </div>
             <div class="article">
@@ -700,10 +563,11 @@
                         <h4>
                             
                           <p>: كيفية الاشتراك في خطة تعدين سحابي  </p>
-                          ١- انشاء حساب على المنصة ٢- إيداع اموالك داخل محفظتك الشخصية على المنصة ٣- اختر خطتك التعدينية التي تناسب أهدافك التداولية ثم إضغط على خانة بداء التعدين / الاشتراك الآن ثم انتظر رسالة تأكيد الإشتراك ٤- انتظر موعد استلام عملاتك او ارباحك حسب خطتك التعدينية ٥- بعد انتهاء مدة صلاحية عملية التعدين يتم اضافة عملاتك المشفرة التي تم طرحها من عملية التعدين الي محفظتك
+                          ١- انشاء حساب على المنصة ٢- إيداع اموالك داخل محفظتك على المنصة ٣- اختر خطتك التعدينية التي تناسب أهدافك التداولية ثم إضغط على خانة بداء التعدين / الاشتراك الآن ثم انتظر رسالة تأكيد الإشتراك ٤- انتظر موعد استلام عملاتك او ارباحك حسب خطتك التعدينية ٥- بعد انتهاء مدة صلاحية عملية التعدين يتم اضافة عملاتك المشفرة التي تم طرحها من عملية التعدين الي محفظتك
                         </h4>
                         <h4>
-                            ملحوظة : ١- سعر خطة التعدين الفردي شاملة إجمالي مصاريف التشغيل الخاصة بعملية التعدين بكاملها ٢- يتم اضافة العملات الرقمية آلتي تم الانتهاء من تعدينها في حسابك الشخصي بعد انتهاء مدة خطة التعدين الجماعي مع استلامك لارباح دورية طوال فترة التعدين من عملة USDT و تضاف هذه العملة في محفظتك و يمكن سحب الارباح بأكثر من نوع عملة مختلفة حسب قيمة رصيد محفظتك حيث تتساوي قيمة عملة usdt مع قيمة الدولار
+                         ملحوظة : ١- سعر خطة التعدين الفردي شاملة إجمالي مصاريف التشغيل الخاصة بعملية التعدين بكاملها ٢- يتم اضافة العملات الرقمية آلتي تم الانتهاء من تعدينها في حسابك الشخصي بعد انتهاء مدة خطة التعدين الجماعي مع استلامك لارباح دورية طوال فترة التعدين من عملة يو اس دي تي و تضاف هذه العملة في محفظتك و يمكن سحب الارباح بأكثر من نوع عملة مختلفة حسب قيمة رصيد محفظتك حيث تتساوي قيمة عملة يو اس دي تي مع قيمة سعر الدولار اليوم
+
                         </h4>
                     </div>
                 </div>
@@ -711,9 +575,12 @@
         </div>
         
 
-    
+ 
     <script src="../js/jequery.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/links.js"></script>
+    <script src="../js/taden.js"></script>
+    <script src="../js/APLs/cryptocurrency.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

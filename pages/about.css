@@ -34,8 +34,16 @@ body{
     line-height: 47px;
     margin-top: 7px;
     font-size: 24px;
-    text-align: end;
+    text-align: start;
     word-spacing: 3.1999999999999993px;
+}
+.images{
+
+}
+.images img{
+        width: 70%;
+        border-radius: 0;
+        height: auto;
 }
 /* ******************************    mobile style                  ************************************************* */
 @media (max-width:1100px) {
@@ -43,4 +51,9 @@ body{
         font-size: 17px;
     
     }
+    .images img{
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+}
 }

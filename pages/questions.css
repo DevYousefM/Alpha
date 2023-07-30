@@ -13,7 +13,7 @@ body{
     padding: 0;
     font-family: 'cai' !important;
 
- background-color: #1728fa !important;
+    background-color: #389ed8 !important;
 }
 .our-nav{
     padding-bottom: 15px;
@@ -25,7 +25,7 @@ body{
     margin-top: 75px;
 }
 .question {
-    text-align: end;
+
     /* margin-top: 100px; */
     cursor: pointer;
     padding: 15px;
@@ -35,7 +35,7 @@ body{
 }
 
 .question h3{
-    font-size: 20px;
+    font-size: 25px;
     line-height: 40px;
 }
 p.answer {
@@ -43,7 +43,7 @@ p.answer {
     padding: 20px;
     margin-top: 15px;
     /* border: 6px solid #cdc8c8; */
-    text-align: end;
+
     /* word-spacing: 4.199999999999999px; */
     color: white;
     font-size: 20px;
@@ -52,5 +52,22 @@ p.answer {
     cursor: auto;
 }
 @media (max-width:1100px) {
-    
+    .question{
+        margin-bottom: 0;
+        padding: 0px;
+    }
+    .question h3 {
+        font-size: 15px;
+        line-height: 40px;
+    }
+    p.answer {
+        
+      
+        font-size: 15px;
+        line-height: 50px;
+        padding: 0;
+    }
+    .questions-content {
+        margin-top: 10px;
+    }
 }

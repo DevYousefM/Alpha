@@ -33,7 +33,7 @@ $(document).ready(function() {
     var countdownElement = $('.countdown');
       
       function startCountdown() {
-        var minutes = 90; // 90 minutes
+        var minutes = 60; // 90 minutes
         var seconds = minutes * 60;
         
         var interval = setInterval(function() {
@@ -52,3 +52,26 @@ $(document).ready(function() {
       
       startCountdown();
   });
+
+  // select dropdown
+
+// years dropdown
+var currentYear = new Date().getFullYear();
+var select = document.getElementById("years");
+for (var i = currentYear; i <= 2035; i++) {
+  var option = document.createElement("option");
+  option.text = i;
+  option.value = i;
+  select.add(option);
+
+}
+// months dropdown
+
+var select = document.getElementById("months");
+for (let i = 1; i <= 12; i++) {
+  var option = document.createElement("option");
+  option.text = i < 10 ? "0" + i : i;
+  option.value = i < 10 ? "0" + i : i;
+  select.add(option);
+}
+

@@ -8,7 +8,16 @@
     --four-color:#45E900;
     --dark-color:#00175c;
 }
+.egp-input , .usd-input {
+  position: relative;
+}
+.egp-input .egp-icon , .usd-input .usd-icon{
+  position: absolute;
+  left: 10px;
+  top: 35%;
+  z-index: 5;
 
+}
 .arrow {
     color: red;
     cursor: pointer;
@@ -40,8 +49,8 @@
     display: flex;
     justify-content: space-between;
     margin-left: 69px;
-
     align-items: center;
+    margin-top: 32px;
  
   }
   .numbers .des{
@@ -54,10 +63,21 @@
     font-weight: 700;
     font-size: 27px;
 }
+.cvv{
+  position: relative;
+}
+.cvv input{
+  height: 60% !important;
+}
+.credit-card{
+  position: absolute;
+    top: 10px;
+    left: 15px;
+}
 .validate-number.des {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 h3.copy {
     color: var(--main-color);
@@ -68,11 +88,12 @@ h3.copy {
 @media (max-width:1100px) {
   .validate-number.des ,.pay-cards .pay-cards-content .process-number{
     display: flex;
-    gap: 30px;
+    gap: 15px;
     justify-content: center;
-    margin-top: 36px;
+    margin-top: 14px;
     align-items: center;
 }
+
 .numbers{
   display: block;
   margin-left: 0;
@@ -81,18 +102,18 @@ h3.copy {
 .pay-account {
   margin-left: 0;
   justify-content: center;
-  align-items: baseline;
+  align-items: start;
   gap: 16px;
-}
-.pay-account .validate-number h3 {
-font-size: 20px;
+  font-size: 1px;
+  margin-top: -14px;
+  margin-bottom: -27px
 }
 .pay-cards .pay-cards-content .process-number h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
 }
+
 .validate-number.des, .pay-cards .pay-cards-content .process-number {
- 
   margin-right: 5px;
 }
 .information p {
@@ -103,4 +124,117 @@ font-size: 20px;
 .methods .methods-content .method-box {
 width: 100%;
 }
+h3 {
+  font-weight: 700;
+  font-size: 16px;
 }
+input.form-control {
+  text-align: end;
+    padding: 11px;
+    width: 45%;
+    font-size: 15px;
+    height: 40px;
+}
+
+.information h3 {
+  
+  font-size: 17px;
+}
+.information p {
+ 
+  margin-right: 10px;
+  padding-left: 13px;
+  line-height: 40px;
+  font-size: 15px;
+}
+.request {
+  width: 165px;
+  height: 52px;
+  font-size: 15px;
+}
+}
+@media (max-width:994px) {
+  .cvv input{
+      height: 90% !important;
+    }
+    .credit-card{
+      position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .usd-input .usd-icon{
+      position: absolute;
+      left: 10px;
+      top: 29%;
+      z-index: 5;
+      font-size: 15px;
+    }
+    .usd-input::placeholder {
+      font-size: 15px;
+      /* Add other styles here */
+    }
+    .egp-input .egp-icon {
+      position: absolute;
+      left: 10px;
+      top: 32%;
+      z-index: 5;
+      font-size: 15px;
+    }
+    .egp-input::placeholder {
+      font-size: 15px;
+    }
+    
+
+  }
+  @media (max-width:  336px) {
+     
+        .usd-input .usd-icon{
+          position: absolute;
+          left: 10px;
+          top: 35%;
+          z-index: 5;
+          font-size: 13px;
+        }
+        .usd-input::placeholder {
+          font-size: 12px;
+          /* Add other styles here */
+        }
+        .egp-input .egp-icon {
+          position: absolute;
+          left: 10px;
+          top: 42%;
+          z-index: 5;
+          font-size: 10px;
+        }
+        .egp-input::placeholder {
+          font-size: 12px;
+        }
+        
+  
+      }
+      @media (max-width:  284px) {
+     
+        .usd-input .usd-icon{
+          position: absolute;
+          left: 10px;
+          top: 42%;
+          z-index: 5;
+          font-size: 9px;
+        }
+        .usd-input::placeholder {
+          font-size: 9px;
+          /* Add other styles here */
+        }
+        .egp-input .egp-icon {
+          position: absolute;
+          left: 10px;
+          top: 48%;
+          z-index: 5;
+          font-size: 7px;
+        }
+        .egp-input::placeholder {
+          font-size: 9px;
+        }
+        
+  
+      }

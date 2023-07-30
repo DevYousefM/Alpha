@@ -19,21 +19,22 @@ body{
     padding-bottom: 15px;
 }
 .packages{
-    /* background-image: url(../imges/back2.png);
-    background-size: cover; */
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
+   padding-top: 39px;
+
 }
+/* .package{
+    width: 30rem;
+} */
 .packages .heading{
 display: flex;
 justify-content: center;
 gap: 15px;
-
+align-items: center;
 }
 .packages .heading h2{
     font-weight: bolder;
     font-size: 47px;
+    color: #000000;
   
 }
 .packages .heading img{
@@ -45,18 +46,14 @@ color: red;
 font-weight: 700;
 white-space: nowrap;
 }
-.packages .packages-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(331px,1fr));
-    margin-top: 100px;
-    gap: 67px;
-}
-@media (max-width:500px) {
+
+@media (max-width:1100px) {
     .packages .packages-content{
         display: block;
     }
     .packages .packages-content .package{
-        margin-bottom: 50px;
+        display: block;
+      
     }
 }
 .packages .packages-content .package{
@@ -79,7 +76,8 @@ white-space: nowrap;
     justify-content: space-between;
     margin-bottom: 7px;
     color: #000000ab;
-    padding-bottom: 15px;
+    padding: 10px;
+    gap: 20px;
 }
 .packages .packages-content .package .pac ,.last-pac{
     border-bottom: 1px solid #0000003b;
@@ -103,32 +101,36 @@ white-space: nowrap;
 }
 .packages .packages-content .package  .btn{
     background-color: var(--four-color);
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 20px;
     cursor: auto;
     border-radius: 10px;
     margin-top: -15px;
 }
 .btn-s ,.btn-s-1{
-    background-color: var(--btn-back);
-    width: 200px;
+    background-color: #0174b7;
+    width: 150px;
     margin: auto;
     height: 58px;
     text-align: center;
     font-size: 25px;
     font-weight: 600;
     color: white;
-    padding-top: 10px;
+    border: none;
     border-radius: 17px;
     cursor: pointer;
     
+}
+.btn-s:hover {
+    background-color: #00436a;
 }
 .btn-s-1{
     position: relative;
     margin-top: 45px;
 }
-.btn-s-1::before{
+
+.non-active::before{
     content: "";
     width: 120%;
     height: 7px;
@@ -136,6 +138,7 @@ white-space: nowrap;
     top: 50%;
     left: -20px;
     position: absolute;
+   
 }
 .article{
     text-align: center;
@@ -152,29 +155,68 @@ white-space: nowrap;
 }
 .article .article-content p ,.article .article-content h4{
     color: black;
-    line-height: 47px;
-    margin-top: 70px;
-    font-size: 24px;
+    line-height: 32px;
+    margin-top: 48px;
+    font-size: 15px;
     text-align: end;
-    word-spacing: 3.1999999999999993px;
+    /* word-spacing: 3.1999999999999993px; */
 
 }
 
 /* *****************************************    mobile style                        **************************************************** */
 @media (max-width:1100px) {
     .packages .heading h2 {
-        font-size: 22px;
+        font-size: 15px;
         white-space: nowrap;
     }
     .packages .heading img {
-        width: 31px;
+        width: 30px;
     }
     .packages .packages-content .package {
     
         padding: 13px;
     }
     .packages .packages-content .package h2 {
-
         font-size: 30px;
+        margin-bottom: 9px;
+    }
+    .packages .package p {
+        font-size: 10px;
+     
+    }
+    .packages .packages-content .package .pac {
+        margin-bottom: 3px;
+       
+    }
+    .packages .packages-content .package .pac h3 {
+        font-size: 18px;
+    }
+    .packages .packages-content .package .btn {
+        font-size: 18px;
+        margin-bottom: 9px;
+        padding: 4px;
+      
+    }
+    .packages .packages-content .package.pm {
+        height: auto !important;
+      
+    }
+    .btn-s, .btn-s-1 {
+        width: 123px;
+        height: 46px;
+        font-size: 18px;
+      
+    }
+    .btn-s-1 {
+        margin-top: 37px;
+    }
+    .btn-s-1::before {
+        content: "";
+        width: 110%;
+        height: 6px;
+      
+        top: 50%;
+        left: -9px;
+       
     }
 }

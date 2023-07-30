@@ -12,8 +12,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'cai' !important;
-
- background-color: #1728fa !important;
+    background-color: #1728fa !important;
 }
 .our-nav{
     padding-bottom: 15px;
@@ -25,8 +24,8 @@ body{
     margin-top: 3px;
 }
 .our-nav .our-nav-content .links img {
-    width: 64px;
-    height: 29px;
+    width: 34px;
+    height: 30px;
 }
 .our-nav .our-nav-content .icons .user {
     width: 50px;
@@ -49,18 +48,22 @@ body{
     color: #00000073;
 }
 .packages{
-    padding-top: 100px;
+    
     padding-bottom: 100px;
     width: 75%;
     margin: auto;
     
 }
 .packages-group{
-    padding-top: 100px;
-    padding-bottom: 100px;
-   
     margin: auto;
+    margin-top: 0;
     
+}
+h2.g2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 249px !important;     
 }
 
 
@@ -74,23 +77,25 @@ font-weight: 700;
 white-space: nowrap;
 }
 .packages .packages-content {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill,minmax(331px,1fr));
     margin-top: -116px;
-    gap: 67px;
+    gap: 67px; */
 }
 .packages-group .packages-content{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-    margin-top: 20px;
-    gap: 67px;
+    margin-top: -152px;
+    gap: 67px; */
 }
-@media (max-width:500px) {
+@media (max-width:1100px) {
     .packages .packages-content{
         display: block;
+        margin-top: -39px;
     }
     .packages .packages-content .package{
         margin-bottom: 50px;
+        border-radius: 15px;
     }
     .packages-group .packages-content{
         display: block;
@@ -134,7 +139,7 @@ white-space: nowrap;
 .packages .packages-content .package .pac{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 7px;
+    margin-bottom: 0px;
     border-bottom: none !important;
     padding-bottom: 15px;
 }
@@ -170,8 +175,8 @@ gap: 30px;
 .packages .packages-content .package .pac .btn-box .bt1 {
     background-color: var(--four-color);
     border: none;
-    width: 120px;
-    height: 58px;
+    width: 80px;
+    height: 40px;
     border-radius: 15px;
     color: white;
     font-weight: bolder;
@@ -190,7 +195,7 @@ gap: 30px;
 background-color: transparent;
 border: none;
 font-size: 23px;
-font-weight: bolder;
+font-weight: 600;
 color: white;
 }
 .packages-group .packages-content .package .pac .btn-box .two {
@@ -212,6 +217,7 @@ text-transform: capitalize;
     font-size: 28px;
     font-weight: bolder;
     letter-spacing: 7px;
+    margin-bottom: 0;
 }
 .packages-group .packages-content .package .pac .img-box h3{
     font-size: 28px;
@@ -236,6 +242,7 @@ color: white;
 .packages .packages-content .package .pac h3{
 direction: rtl;
 text-transform: uppercase;
+font-size: 1.50rem;
 }
 .packages-group .packages-content .package .pac h3{
     direction: rtl;
@@ -280,22 +287,21 @@ text-transform: uppercase;
 }
 .btn-taden{
     background-color: #1728fa;
-    width: 200px;
+    width: 175px;
     margin: auto;
-    height: 58px;
+    height: 57px;
     text-align: center;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     color: white;
-    padding-top: 10px;
+    padding-top: 7px;
     border-radius: 17px;
-    margin-top: 45px;
+    margin-top: 10px;
     cursor: pointer;
-    
 }
 .btn-s-1{
     position: relative;
-   
+
 }
 
 .article{
@@ -310,6 +316,8 @@ text-transform: uppercase;
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
+    margin-top: 126px;
+    color: #000000;
 }
 .custom-shape-divider-top-1685739417 {
     position: absolute;
@@ -322,9 +330,7 @@ text-transform: uppercase;
 .our-nav{
     background-color: white;
 
-    /* You can use gradient background color such as */
-    /* background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%); */
-
+   
     /* Curved corners */
     border-bottom-left-radius: 50% 40%;
     border-bottom-right-radius: 50% 40%;
@@ -341,8 +347,9 @@ text-transform: uppercase;
     height: 261px;
     width: 100%;
 }
+
 .heading {
-    transform: translateY(-104px);
+    transform: translateY(-243px);
 }
 .article{
     text-align: center;
@@ -358,59 +365,154 @@ text-transform: uppercase;
 }
 .article .article-content p ,.article .article-content h4{
     color: white;
-    line-height: 47px;
-    margin-top: 70px;
-    font-size: 24px;
+    line-height: 33px;
+    margin-top: 29px;
+    font-size: 13px;
     text-align: end;
-    word-spacing: 3.1999999999999993px;
-
+    /* word-spacing: 3.1999999999999993px; */
 }
-@media (max-width:1100px) {
+@media (max-width:1318px) {
     .packages {
-     
         width: 100%;
-
+        padding-bottom: 6px;
+        padding-top: 53px;
     }
     .our-nav {
-
-        height: 191px;
+        height: 149px;
      
     }
-    .heading {
-        transform: translateY(-74px);
+   .heading .g2{
+        transform: translateY(0);
+    }
+   .heading .g1{
+        transform: translateY(170px);
     }
     .packages .packages-content .package {
         padding: 12px;
+        border-radius: 25px;
     }
     .packages .packages-content .package .pac {
         gap: 20px;
     }
     .packages .packages-content .package .pac .btn-box .bt1 {
-        width: 84px;
+        width: 62px;
+        font-size: 15px;
+        font-weight: 700;
+        height: 34px;
+        border-radius: 10px;
     }
     .packages .packages-content .package .pac .btn-box, .packages .packages-content .package .pac .img-box {
-        gap: 10px;
-     
+        gap: 4px;
+        justify-content: center;
     }
     .packages .packages-content .package .pac .img-box img {
-        width: 47px;
+        width: 33px;
     }
     .heading h2 {
-
         font-size: 25px;
-    
+        margin-top: 4px;
+        margin-bottom: -24px;
+    }
+    .heading h2.g {
+        font-size: 25px;
+        margin-top: 56px;
+        margin-bottom: -158px;
+    }
+    .package h2 {
+        font-size: 25px;
     }
     .packages-group .packages-content .package .pac h3 {
-       
         font-size: 19px;
     }
     .packages .packages-content .package .pac .btn-box .bt2 {
-  
-        font-size: 19px;
-      
+        font-size: 14px;
     }
     .packages .packages-content .package .pac .img-box h3 {
         font-size: 25px;
+    }
+    .packages .packages-content .package .pac.f, .packages-group .packages-content .package .pac.f{
+        gap: 9px;
+        align-items: center;
+    }
+    .packages .packages-content .package .pac h3 , .packages-group .packages-content .package .pac h3{
+        font-size: 15px !important;
+        white-space: nowrap;
+    }
+    .packages-group .packages-content .package .pac .btn-box,.packages-group .packages-content .package .pac .two  {
+        justify-content: center;
+        margin-top: 13px;
+        gap: 11px;
+        display: flex;
+        align-items: baseline;
+    }
+    .two h4 {
+        color: white;
+        white-space: nowrap;
+        font-size: 14px;
+    }
 
+    .packages-group .packages-content .package .pac .two .btn-nb {
+        background-color: var(--four-color);
+        border: none;
+        width: 61px;
+        height: 22px;
+        border-radius: 6px;
+        font-size: 13px;
+        color: white;
+        font-weight: bolder;
+        padding-top: 2px;
+        margin-left: 10px;
+    }
+    .packages-group .packages-content .package .pac .btn-box img {
+        width: 39px;
+    }
+    .packages .packages-content .package h2 {
+        font-size: 25px;
+    }
+    .packages-group .packages-content .package h2 {
+        font-size: 25px;
+    }
+    .our-nav .our-nav-content .icons .one {
+        margin-right: 30px;
+        padding-top: 12px;
+        color: #00000073;
+    }
+    .our-nav .our-nav-content .icons .user {
+        width: 33px;
+        height: 34px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        margin-top: 7px;
+        margin-left: 5px;
+    }
+    .packages-group .packages-content .package {
+        padding: 15px;
+    }
+    .our-nav .our-nav-content .icons .user i {
+        padding-left: 11px;
+        color: white;
+        font-size: 20px;
+        transform: translate(-3px, -15px);
+    }
+    .our-nav .our-nav-content .logo img {
+        width: 76px;
+        margin-right: 18px;
+        margin-top: 10px;
+    }
+    .btn-taden {
+        width: 135px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        height: 47px;
+    }
+    .packages .packages-content .package .pac {
+        margin-bottom: 3px;
+        padding-bottom: 10px;
+    }
+    .packages-group .packages-content .package .pac {
+        margin-bottom: 3px;
+        padding-bottom: 11px;
     }
 }

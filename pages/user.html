@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تداول الان مع افضل منصة في الشرق الأوسط و ابداء في تحقيق الارباح ">
+    <link rel="icon" type="image/x-icon" href="../imges/LOGO11-01.png">
     <title> المستخدم</title>
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -18,7 +20,7 @@
             <div class="our-nav-content">
                 <div class="icons">
                     <i class="fa-solid fa-bars one" id="menu"></i>
-                    <div class="user"><a href="./user.html"><i class="fa-solid fa-user "></i></a></div>    
+                    <div class="user"><a href="./user.html" class="user-page"><i class="fa-solid fa-user "></i></a></div>    
                 </div>
                 <div class="links">
                         <a href="./taden.html"> <img src="../imges/newtaden.png" alt="" srcset=""> <h3>تعدين سحابي</h3></a>
@@ -27,17 +29,18 @@
                         <a href="../index.html"> <img src="../imges/homeicon-white.png" alt="" srcset=""> <h3> الرئيسيه</h3></a>
                 </div>
                 <div class="logo">
-                    <img src="../imges/newlogo.png" alt="" srcset="">
+                    <a href="../index.html"> <img src="../imges/newlogo.svg" alt="" srcset="">
+                    </a>
                 </div>
                <!-- start pages -->
                <div class="side-bar" id="setting">
-                <button type="button" class="btn-close btn-close-white m-auto close " id="close" ></button> 
+                <button type="button" class="btn-close  m-auto close " id="close" ></button> 
                 <div class="side-bar-content">
                     <a class="side" href="../index.html">
                         <img src="../imges/home-icon.svg" alt="" srcset="">
                         <h3>الصفحه الرئيسيه</h3>
                     </a>
-                    <a class="side" href="./user.html">
+                    <a class="side user-page" href="./user.html">
                         <img src="../imges/circle-user-solid (1).svg" alt="" srcset="">
                         <h3> حسابي الشخصي</h3>
                     </a>
@@ -66,7 +69,7 @@
                         <h3> حول الشركه </h3>
                     </a>
                     <a class="side" href="./questions.html">
-                        <img src="../imges/Q&A.png" alt="" srcset="">
+                        <img style="width: 45px;" src="../imges/A_Q.svg" alt="" srcset="">
                         <h3> سؤال وجواب </h3>
                     </a>
                     <a class="side" href="./bolcks.html">
@@ -93,6 +96,10 @@
                         <img src="../imges/download-solid.png" alt="" srcset="">
                         <h3> تثبيت التطبيق    </h3>
                     </a>
+                    <a class="side" href="./academy.html">
+                        <img src="../imges/Group 2269.svg" alt="" srcset="">
+                        <h3>ألفا اكاديمي</h3>
+                    </a>
                 </div>
                </div>
             <!-- end pages -->
@@ -101,25 +108,29 @@
     </div>    
     <div class="users">
         <div class="container">
+            <button id="logout" class="btn my-4 ">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </button>
             <div class="user-content">
                 <div class="user-info">
                     <div class="user-info-img">
+                       
                         <i class="fa-solid fa-user "></i>
                     </div>
                     
-                    <h3>محمد عمرو عبد العزيز</h3>
+                    <h3 class="user-name"></h3>
                 </div>
                 <div class="box-data">
-                    <h3>الكود الخاص بي</h3>
-                    <div class="code"><p>53967</p></div>
-                    <div class="copy">
+                    <h3 class="">الكود الخاص بي</h3>
+                    <div class="user-code my-auto"><p></p></div>
+                    <div class="copy ">
                         <i class="fa-solid fa-copy"></i>
                         <h2>نسخ</h2>
                     </div>
                 </div>
-                <div class="box-data">
-                    <h3>الرابط الخاص بي</h3>
-                    <div class="link"><p>https://alphadollar.com</p></div>
+                <div class="box-data my-auto mb-5">
+                    <h3 class="">الرابط الخاص بي</h3>
+                    <div class="user-link my-auto"><p></p></div>
                     <div class="copy">
                         <i class="fa-solid fa-copy"></i>
                         <h2>نسخ</h2>
@@ -127,12 +138,12 @@
                 </div>
                 <div class="balance-info">
                     <div class="balance">
-                        <h3 >$ 6,000 </h3>
+                        <h3 class="charge" >  </h3>
                         <h3 >إجمالي الرصيد</h3>
                     </div>
                     <div class="balance-mobile">
                         <h3 >إجمالي الرصيد</h3>
-                        <h3 >$ 6,000 </h3>
+                        <h3 class="charge-mobile"> </h3>
                         
                     </div>
                     <div class="balance-btn">
@@ -167,279 +178,24 @@
                         <button class="e-account-btn btn-j" id="e-account" data-target="div4">سجل الايداع </button>
                 </div>
                 <div class="h-account account-j"  id="div1">
-                    <div class="card-account">
-                        <div class="procces">
-                            <div class="pro">
-                                <div class="icon"><i class="fa-solid fa-check"></i></div> 
-                                <h3 style="color: #00920f;">عمليه مقبوله</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>30 $</h3>
-                                <h3> قيمة السحب</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>2023/29/5</h3>
-                                <h3> تاريخ السحب</h3>
-                            </div>
-                        </div>
-                        <div class="procces">
-                            <div class="pro text-danger" >
-                                <div class="rejected"><i class="fa-thin fa-x"></i></div> 
-                                <h3 class=" text-danger">عمليه مرفوضه</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>15 $</h3>
-                                <h3> قيمة السحب</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>2023/29/5</h3>
-                                <h3> تاريخ السحب</h3>
-                            </div>
-                        </div>
-                        <div class="procces">
-                            <div class="pro">
-                                <div class="pending"><i class="fa-solid fa-clock"></i>
-                                </div> 
-                                <h3 style="color: #389ED8;">قيد المراجعه</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>20 $</h3>
-                                <h3> قيمة السحب</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>2023/29/5</h3>
-                                <h3> تاريخ السحب</h3>
-                            </div>
-                        </div>
+                    <div class="card-account Cash_Out">
+                       
                     </div>
                 </div>
-                <div class="r-account account-j"  id="div2">
-                    <div class="card-account-r card-account">
-                        <div class="procces-r">
-                            <div class="pro">
-                                
-                                <i class="fa-solid fa-download"></i>
-                            </div>
-                           
-                            <div class="pro">
-                                
-                                <h3>2023/1/4</h3>
-                                
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 2,120 $ </h3>
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>OPTION BOT</h3>
-                            </div>
-                        </div>
-                        <div class="procces-r">
-                            <div class="pro">
-                               
-                                <i class="fa-solid fa-download"></i>
-                            </div>
-                            
-                            <div class="pro">
-                               
-                                <h3>2023/29/5</h3>
-                                
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 3,120 $ </h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>FOX PLAN</h3>
-                            </div>
-                        </div>
-                        <div class="procces-r">
-                            <div class="pro">
-                                
-                                <i class="fa-solid fa-download"></i>
-                            </div>
-                            
-                            <div class="pro">
-                               
-                                <h3>2023/6/5</h3>
-                                
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 5,000 $ </h3>
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>إحالة العميل 2374 </h3>
-                            </div>
-                        </div>
+                <div class="r-account  account-j "  id="div2">
+                    <div class="card-account-r card-account Profits">
                         
                     </div>
                 </div>
                 <div class="s-account account-j"  id="div3">
-                    <div class="card-account">
-                        <div class="procces-s">
-                            <div class="pro">
-                                <h3 class="duration"> 8 شهور</h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 5000 $ </h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>2023/29/5</h3>
-                                
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>DIAMOND PLAN</h3>
-                            </div>
-                        </div>
-                        <div class="procces-s">
-                            <div class="pro">
-                                
-                                <h3 class="duration"> 6 شهور</h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 3000 $ </h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>2023/2/5</h3>
-                                
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>GLODEN PLAN</h3>
-                            </div>
-                        </div>
-                        <div class="procces-s">
-                            <div class="pro">
-                                
-                                <h3 class="duration">  1 اسبوع</h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 1000 $ </h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>2023/1/4</h3>
-                                
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>OPTION BOT</h3>
-                            </div>
-                        </div>
-                        <div class="procces-s">
-                            <div class="pro">
-                               
-                                <h3 class="duration">  3 شهور</h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 1000 $ </h3>
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>2023/29/5</h3>
-                                
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>FOX PLAN</h3>
-                            </div>
-                        </div>
-                        <div class="procces-s">
-                            <div class="pro">
-                                
-                                <h3 class="duration">   6 شهور</h3>
-                            </div>
-                            <div class="pro">
-                                
-                                <h3> 5000 $ </h3>
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>2023/6/5</h3>
-                                
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>CRYPTO BOT</h3>
-                            </div>
-                        </div>
-                        <div class="procces-s">
-                            <div class="pro">
-                                
-                                <h3 class="duration"> 2  شهور</h3>
-                            </div>
-                            <div class="pro">
-                               
-                                <h3> 2000 $ </h3>
-                            </div>
-                            <div class="pro">
-                               
-                                <h3>2023/9/7</h3>
-                                
-                            </div>
-                            <div class="pro">
-                                
-                                <h3>FOREX BOT</h3>
-                            </div>
-                        </div>
+                    <div class="card-account subscriptions">
+                        
                     </div>
                 </div>
                 <div class="e-account account-j"  id="div4">
-                    <div class="card-account">
-                        <div class="procces">
-                            <div class="pro">
-                                <div class="icon"><i class="fa-solid fa-check"></i></div> 
-                                <h3 style="color: #00920f;">عمليه مقبوله</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>30 $</h3>
-                                <h3> قيمة الايداع</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>2023/29/5</h3>
-                                <h3> تاريخ الايداع</h3>
-                            </div>
-                        </div>
-                        <div class="procces">
-                            <div class="pro text-danger" >
-                                <div class="rejected"><i class="fa-thin fa-x"></i></div> 
-                                <h3 class=" text-danger">عمليه مرفوضه</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>20 $</h3>
-                                <h3> قيمة الايداع</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>2023/29/5</h3>
-                                <h3> تاريخ الايداع</h3>
-                            </div>
-                        </div>
-                        <div class="procces">
-                            <div class="pro">
-                                <div class="pending"><i class="fa-solid fa-clock"></i>
-                                </div> 
-                                <h3 style="color: #389ED8;">قيد المراجعه</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>15 $</h3>
-                                <h3> قيمة الايداع</h3>
-                            </div>
-                            <div class="pro">
-                                <h3>2023/29/5</h3>
-                                <h3> تاريخ الايداع</h3>
-                            </div>
-                        </div>
+                    <div class="card-account deposits">
+                       
+                      
                     </div>
                 </div>
 
@@ -452,6 +208,8 @@
     <script src="../js/jequery.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/user.js"></script>
+    <script src="../js/links.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/control.js"></script>
 </body>
 </html>

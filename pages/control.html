@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تداول الان مع افضل منصة في الشرق الأوسط و ابداء في تحقيق الارباح ">
+    <link rel="icon" type="image/x-icon" href="../imges/LOGO11-01.png">
     <title> لوحة التحكم</title>
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./control.css">
 
@@ -18,41 +19,339 @@
         <div class="control-nav">
             <div class="container">
                 <div class="control-nav-content">
-                    <ul>
-                        <li>محافظ</li>
-                        <li>سحب </li>
-                        <li>ايداع</li>
+                  
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="سجل-tab" data-bs-toggle="tab" data-bs-target="#سجل" type="button" role="tab" aria-controls="سجل" aria-selected="false">سجل</button>
+                    </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link  " id="محافظ-tab" data-bs-toggle="tab" data-bs-target="#محافظ" type="button" role="tab" aria-controls="محافظ" aria-selected="true">محافظ</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="سحب-tab" data-bs-toggle="tab" data-bs-target="#سحب" type="button" role="tab" aria-controls="سحب" aria-selected="false">سحب</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ايداع-tab" data-bs-toggle="tab" data-bs-target="#ايداع" type="button" role="tab" aria-controls="ايداع" aria-selected="false">ايداع</button>
+                        </li>
+                        
                     </ul>
+
                 </div>
             </div>
         </div>
         <div class="section">
-            <div class="container">
-                <div class="control-content">
-                    <div class="pay">
-                        <img src="../imges/instaby.jpg" alt="" srcset="">
-                        <h3>instaby</h3>
+           
+              
+                    <!-- start-tabs-content -->
+                <div class="tab-content " id="myTabContent">
+                    <!-- start سجل content -->
+                    <div class="tab-pane fade show active" id="سجل" role="tabpanel" aria-labelledby="سجل-tab">
+                     
+                        <div class="control-content d-flex mb-5">
+                                <div class="  pay  text-center">
+                                    <img class="mb-3 "  src="../imges/instaby.jpg" alt="" srcset="">
+                               
+                                    <div class="history row mx-0" key="instapay">
+                                        
+                                   
+                                    
+                                  
+                                    
+                                  </div>
+                                </div>
+
+
+                                <div class="  pay  text-center">
+                                  <img class="mb-3 "  src="../imges/we.jpg" alt="" srcset="">
+                                
+                                   <div class="history row mx-0" key="we">
+
+                                    </div>
+                           
+                            </div>
+                              <div class="  pay  text-center">
+                                <img class="mb-3 "  src="../imges/etislate.jpg" alt="" srcset="">
+                              
+                                <div class="history row mx-0" key="etisalat">
+ 
+                                
+                              </div>
+                            </div>
+
+                            <div class="  pay  text-center">
+                              <img class="mb-3 "  src="../imges/orange.jpg" alt="" srcset="">
+                         
+                              <div class="history row mx-0" key="orange">
+
+                              </div>
+
+                            
+                          </div>
+
+                          <div class="  pay  text-center" id="vodafoneData">
+                                    <img class="mb-3 "  src="../imges/vodafone.jpg" alt="" srcset="">
+                              
+                                    <div class="history row mx-0" key="vodafone">
+
+                                     
+                                  </div>
+                                </div>
+                         
+                        
+                        </div>
                     </div>
-                    <div class="pay">
-                        <img src="../imges/we.jpg" alt="" srcset="">
-                        <h3>we pay</h3>
+                    <!-- end سجل content -->
+                     <!-- start محافظ content -->
+                    <div class="tab-pane fade" id="محافظ" role="tabpanel" aria-labelledby="محافظ-tab"> <div class="row">
+                      <div class="control-content d-flex  mb-5 " id="wallets">
+                              <div class="me-1 pay pe-1 text-center instapay" key="instapay">
+                                  <img class="mb-3 "  src="../imges/instaby.jpg" alt="" srcset="">
+                                <div class="row mx-0">
+                                  <form class="d-flex add-item" key="instapay">
+                                    <button type="submit" class="btn btn-primary">تم</button>
+                                    <div class="mb-3  ">
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="إضافة محفظة جديدة" name="wallet">
+                                    </div>
+                                  
+                                  </form>
+                                  <div class="wallets" key="instapay">
+                                  
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class=" me-1 pay pe-1 text-center we" key="we">
+                                <img class="mb-3 "  src="../imges/we.jpg" alt="" srcset="">
+                              <div class="row mx-0">
+                                <form class="d-flex add-item" key="we">
+                                  <button type="submit" class="btn btn-primary">تم</button>
+                                  <div class="mb-3  ">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="إضافة محفظة جديدة" name="wallet">
+                                  </div>
+                                
+                                </form>
+                                    <div class="wallets" key="we">
+                                      
+                                    </div>
+                                  </div>
+                              </div>
+                            
+
+                            <div class=" me-1 pay pe-1 text-center etisalat" key="etisalat" >
+                              <img class="mb-3 "  src="../imges/etislate.jpg" alt="" srcset="">
+                            <div class="row mx-0">
+                              <form class="d-flex add-item" key="etisalat">
+                                <button type="submit" class="btn btn-primary">تم</button>
+                                <div class="mb-3  ">
+                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="إضافة محفظة جديدة" name="wallet">
+                                </div>
+                              
+                              </form>
+                              <div class="wallets" key="etisalat">
+                              
+                            </div>
+                            </div>
+                          </div>
+
+                          <div class=" me-1 pay pe-1 text-center orange" key="orange">
+                            <img class="mb-3 "  src="../imges/orange.jpg" alt="" srcset="">
+                          <div class="row mx-0">
+                            <form class="d-flex add-item" key="orange">
+                              <button type="submit" class="btn btn-primary">تم</button>
+                              <div class="mb-3  ">
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="إضافة محفظة جديدة" name="wallet">
+                              </div>
+                            
+                            </form>
+                            <div class="wallets" key="orange">
+                           
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class=" me-1 pay pe-1 text-center vodafone" >
+                          <img class="mb-3 "  src="../imges/vodafone.jpg" alt="" srcset="">
+                        <div class="row mx-0">
+                          <form class="d-flex add-item" key="vodafone">
+                            <button type="submit" class="btn btn-primary">تم</button>
+                            <div class="mb-3  ">
+                              <input type="text" class="form-control add-wallet" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="إضافة محفظة جديدة" name="wallet">
+                            </div>
+                          
+                          </form>
+                          <div class="wallets" key="vodafone">
+                         
+                        </div>
+                        </div>
+                      </div>
+                       
+                      </div>
+                      </div></div>
+                        <!-- end محافظ content -->
+                        <!-- start ايداع content -->
+                    <div class="tab-pane fade" id="ايداع" role="tabpanel" aria-labelledby="ايداع-tab"> <div class="control-content d-flex mb-5">
+                              <div class=" me-1 pay pe-1 text-center">
+                                  <img class="mb-3 "  src="../imges/instaby.jpg" alt="" srcset="">
+                                <div class="row mx-0">
+                                  <form class="search-item" key="instapay">
+                                    <div class="mb-3  ">
+                                      <input  type="text" name="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                      <i  class="search-icon  fa fa-search"></i>
+                                    </div>
+                                  
+                                  </form>
+                                  <div class="deposits" key="instapay">
+                                    
+                                   
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class=" me-1 pay pe-1 text-center">
+                                <img class="mb-3 "  src="../imges/we.jpg" alt="" srcset="">
+                                <div class="row mx-0">
+                                  <form class="search-item" key="we">
+                                    <div class="mb-3  ">
+                                      <input  type="text" name="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                      <i class="search-icon  fa fa-search"></i>
+                                    </div>
+                                  
+                                  </form>
+                                  <div class="deposits" key="we">
+                                   
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class=" me-1 pay pe-1 text-center">
+                              <img class="mb-3 "  src="../imges/etislate.jpg" alt="" srcset="">
+                              <div class="row mx-0">
+                                <form class="search-item" key="etisalat">
+                                  <div class="mb-3  ">
+                                    <input  type="text" name="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                    <i class="search-icon  fa fa-search"></i>
+                                  </div>
+                                
+                                </form>
+                                <div class="deposits" key="etisalat">
+                                 
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class=" me-1 pay pe-1 text-center">
+                            <img class="mb-3 "  src="../imges/orange.jpg" alt="" srcset="">
+                            <div class="row mx-0">
+                              <form class="search-item" key="orange">
+                                <div class="mb-3  ">
+                                  <input  type="text"  name="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                  <i class="search-icon  fa fa-search"></i>
+                                </div>
+                              
+                              </form>
+                              <div class="deposits" key="orange">
+                               
+                              </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class=" me-1 pay pe-1 text-center">
+                          <img class="mb-3 "  src="../imges/vodafone.jpg" alt="" srcset="">
+                          <div class="row mx-0">
+                            <form class="search-item" key="vodafone">
+                              <div class="mb-3  ">
+                                <input  type="text"  name="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                <i  class="search-icon  fa fa-search"></i>
+                              </div>
+                            
+                            </form>
+                            <div class="deposits" key="vodafone">
+                             
+                             
+                            </div>
+                          </div>
+                      </div>
+                       
+                      </div></div>
+                  <!-- end ايداع content -->
+                  <!-- start سحب content -->
+                      <div class="tab-pane fade " id="سحب" role="tabpanel" aria-labelledby="سحب-tab"> <div class="control-content d-flex mb-5">
+                        <div class=" me-1 pay pe-1 text-center">
+                            <img class="mb-3 "  src="../imges/coingate.svg" alt="" srcset="">
+                          <div class="row mx-0 cash-out" key="coingate">
+                            
+                          
+                             
+                              
+
+                          </div>
+                        </div>
+
+                        <div class=" me-1 pay pe-1 text-center">
+                          <img class="mb-3 "  src="../imges/instaby.jpg" alt="" srcset="">
+                          <div class="row mx-0 cash-out" key="instapay">
+                              
+                           
+                        </div>
+                          </div>
+
+                          <div class=" me-1 pay pe-1 text-center">
+                            <img class="mb-3 "  src="../imges/we.jpg" alt="" srcset="">
+                            <div class="row mx-0 cash-out" key="we">
+                        
+                          </div>
+                        </div>
+
+                          <div class=" me-1 pay pe-1 text-center">
+                            <img class="mb-3 "  src="../imges/etislate.jpg" alt="" srcset="">
+                            <div class="row mx-0 cash-out" key="etisalat">
+                                
+                              
+                          </div>
+                        </div>
+
+                        <div class=" me-1 pay pe-1 text-center">
+                          <img class="mb-3 "  src="../imges/orange.jpg" alt="" srcset="">
+                          <div class="row mx-0 cash-out" key="orange">
+                        </div>
+                      </div>
+
+                      <div class=" me-1 pay pe-1 text-center">
+                        <img class="mb-3 "  src="../imges/vodafone.jpg" alt="" srcset="">
+                        <div class="row mx-0 cash-out" key="vodafone">
+                      </div>
                     </div>
-                    <div class="pay">
-                        <img src="../imges/etislate.jpg" alt="" srcset="">
-                        <h3>etislate </h3>
-                    </div>
-                    <div class="pay">
-                        <img src="../imges/orange.jpg" alt="" srcset="">
-                        <h3>orange</h3>
-                    </div>
-                    <div class="pay">
-                        <img src="../imges/vodafone.jpg" alt="" srcset="">
-                        <h3>vodafone</h3>
-                    </div>
+                 
+                    
+                    <!-- <div class="">
+                      <span class="d-lg-flex plans justify-content-between ">
+                        <h6 class="">PLATINUM PLAN</h6>
+                        <h6 class="">3000 $</h6>
+                      </span>
+                      <span class="d-lg-flex plans justify-content-between">
+                        <h6 class="">crypto bot</h6>
+                        <h6 class="">3000 $</h6>
+                      </span>
+                      <span class="d-lg-flex plans justify-content-between">
+                        <h6 class="">fox plan</h6>
+                        <h6 class="">3000 $</h6>
+                      </span>
+                    </div> -->
+
+
+                </div></div>
+                 <!-- end سحب content -->
                 </div>
-            </div>
+            
          </div>   
     </div>
-   
+  
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="../js/control.js"></script>
 </body>
 </html>

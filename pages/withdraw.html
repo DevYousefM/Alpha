@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تداول الان مع افضل منصة في الشرق الأوسط و ابداء في تحقيق الارباح ">
+    <link rel="icon" type="image/x-icon" href="../imges/LOGO11-01.png">
     <title> السحب</title>
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -11,14 +13,17 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./withdraw.css">
+    <link rel="stylesheet" href="./messages.css">
 </head>
 <body style="background-color: #f6f6f6;">
+    <div class="messages mb-3">
+    </div>
     <div class="our-nav">
         <div class="nav-container">
             <div class="our-nav-content">
                 <div class="icons">
                     <i class="fa-solid fa-bars one" id="menu"></i>
-                    <div class="user"><a href="./user.html"><i class="fa-solid fa-user "></i></a></div>    
+                    <div class="user"><a href="./user.html" class="user-page"><i class="fa-solid fa-user "></i></a></div>    
                 </div>
                 <div class="links">
                         <a href="./taden.html"> <img src="../imges/newtaden.png" alt="" srcset=""> <h3>تعدين سحابي</h3></a>
@@ -27,17 +32,18 @@
                         <a href="../index.html"> <img src="../imges/homeicon-white.png" alt="" srcset=""> <h3> الرئيسيه</h3></a>
                 </div>
                 <div class="logo">
-                    <img src="../imges/newlogo.png" alt="" srcset="">
+                    <a href="../index.html"> <img src="../imges/newlogo.svg" alt="" srcset="">
+                    </a>
                 </div>
                <!-- start pages -->
                <div class="side-bar" id="setting">
-                <button type="button" class="btn-close btn-close-white m-auto close " id="close" ></button> 
+                <button type="button" class="btn-close  m-auto close " id="close" ></button> 
                 <div class="side-bar-content">
                     <a class="side" href="../index.html">
                         <img src="../imges/home-icon.svg" alt="" srcset="">
                         <h3>الصفحه الرئيسيه</h3>
                     </a>
-                    <a class="side" href="./user.html">
+                    <a class="side user-page" href="./user.html">
                         <img src="../imges/circle-user-solid (1).svg" alt="" srcset="">
                         <h3> حسابي الشخصي</h3>
                     </a>
@@ -66,7 +72,7 @@
                         <h3> حول الشركه </h3>
                     </a>
                     <a class="side" href="./questions.html">
-                        <img src="../imges/Q&A.png" alt="" srcset="">
+                        <img src="../imges/A_Q.svg" alt="" srcset="">
                         <h3> سؤال وجواب </h3>
                     </a>
                     <a class="side" href="./bolcks.html">
@@ -93,51 +99,56 @@
                         <img src="../imges/download-solid.png" alt="" srcset="">
                         <h3> تثبيت التطبيق    </h3>
                     </a>
+                    <a class="side" href="./academy.html">
+                        <img src="../imges/Group 2269.svg" alt="" srcset="">
+                        <h3>ألفا اكاديمي</h3>
+                    </a>
                 </div>
                </div>
             <!-- end pages -->
             </div>
         </div>
-    </div>    
+    </div>   
+     
     <div class="methods">
         <div class="container">
             <div class="methods-content">
                 <div class="method-box" data-target="div1">
-                    <img src="../imges/visa.jpg" alt="" srcset="">
+                    <img src="../imges/visa.jpg" alt="" srcset="" class="visa">
                     <div class="method-info">
                         <h3>بطاقة إتمان</h3>
                         <div class="circle"></div>
                     </div>
                 </div>
-                <div class="method-box" data-target="div2">
+                <div class="method-box vodafone" data-target="div2">
                     <img src="../imges/vodafone.jpg" alt="" srcset="">
                     <div class="method-info">
                         <h3> vodafone cash</h3>
                         <div class="circle"></div>
                     </div>
                 </div>
-                <div class="method-box" data-target="div3">
+                <div class="method-box orange" data-target="div3">
                     <img src="../imges/orange.jpg" alt="" srcset="">
                     <div class="method-info">
                         <h3> orange cash</h3>
                         <div class="circle"></div>
                     </div>
                 </div>
-                <div class="method-box" data-target="div4">
+                <div class="method-box etislate" data-target="div4">
                     <img src="../imges/etislate.jpg" alt="" srcset="">
                     <div class="method-info">
                         <h3> etislate cash</h3>
                         <div class="circle"></div>
                     </div>
                 </div>
-                <div class="method-box" data-target="div5">
+                <div class="method-box we" data-target="div5">
                     <img src="../imges/we.jpg" alt="" srcset="">
                     <div class="method-info">
                         <h3> we pay</h3>
                         <div class="circle"></div>
                     </div>
                 </div>
-                <div class="method-box" data-target="div6">
+                <div class="method-box instapay" data-target="div6">
                     <img src="../imges/instaby.jpg" alt="" srcset="">
                     <div class="method-info">
                         <h3> insta pay</h3>
@@ -165,8 +176,54 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
-                    <div class="pargaph">
-                        <p>هذه الخدمه غير متاحه في بلدك برجاء <br> اختيار طريقه اخري من القائمه</p>
+                   
+                    <div class="container visa-form">
+                        <div class="row justify-content-center ">
+                            <div class=" col-md-7">
+                               
+                                    <div class="mb-3">      
+                                        <input type="text" class="form-control w-100" id="inputText1" placeholder="الاسم على الكارت">
+                                      </div>
+                                    <div class="mb-3">      
+                                      <input type="text" class="form-control w-100" id="inputText2" placeholder="رقم الكارت">
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col-lg-4 col-md-12 cvv">      
+                                            <input type="text" class="form-control 
+                                            h-sm-100 w-100 " id="inputText2" placeholder="CVV">
+                                            <i class="fas fa-credit-card credit-card"></i>
+                                        </div>
+
+                                        <div class="col-lg-8 ">
+                                            <div class="row g-3">
+                                        <span class="col-sm-4 col-12 mt-4 mb-3"><h6>تاريخ الانتهاء</h6></span>
+                                        <div class="col-sm-4 mb-3 col-6">
+                                            <select id="years" class="form-select " aria-label="Default select example">
+                                                <option  selected disabled>YY</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-sm-4 col-6 mb-3">
+                                            <select id="months" class="form-select months w-100" aria-label="Default select example ">
+                                                <option selected disabled>MM
+                                                    <hr>
+                                                </option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="">
+                                      <button id="creditcard" class="btn btn-primary mb-3"> استكمال عملية الدفع</button>
+                                    </div>
+                               
+                               
+                            </div>
+                           
+                        </div>
+                    
                     </div>
                 </div>
                 <div class="pay-box" id="div2">
@@ -177,18 +234,39 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
-                    <div class="inputs">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالدولار">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالجنيه">
-                    </div>
-                    <div class="process-number">
-                        <h3>645152632</h3>
-                        <h3>: رقم العمليه</h3>
-                    </div>
-                    <div class="card-number">
-                        <input class=" form-control num" type="text" name="" id="" placeholder="رقم محفظتك للسحب">
-                    </div>
-                    <button class="request">طلب السحب</button>
+                    <form class="withdraw-data" key="vodafone">
+                        <div class="inputs">
+                            <div class="container">
+                                <div class="inputs ">
+                                 
+                                    <div class=" w-100 usd-input">
+        
+                                    <h6 class="usd-icon">$</h6>
+                                    <input class="usd-input  form-control w-100" type="text" name="usdvalue" required id="" placeholder=" الايداع بالدولار">
+                                    </div>
+        
+                                <div class="w-100 egp-input">
+                                    <h6 class="egp-icon">EGP</h6>
+                                    <input class=" egp-input w-100 form-control" type="text" name="levalue" id="" placeholder=" الايداع بالجنيه">
+                                </div>
+                              </div>
+                                </div>
+                        </div>
+                        <div class="process-number">
+                            <h3>645152632</h3>
+                            <h3>: رقم العمليه</h3>
+                        </div>
+                        <div class="card-number">
+                            <input class="usd-input form-control num" type="text" name="number" required id="" placeholder="رقم محفظتك للسحب">
+                        </div>
+                        <button type="submit" class="request">طلب السحب</button>
+                        <h4 class="finish mb-3"></h4>
+                          
+
+
+
+                        
+                     </form>
                 </div>
                 <div class="pay-box" id="div3">
                     <div class="pay-heading">
@@ -198,18 +276,33 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
-                    <div class="inputs">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالدولار">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالجنيه">
-                    </div>
-                    <div class="process-number">
-                        <h3>645152632</h3>
-                        <h3>: رقم العمليه</h3>
-                    </div>
-                    <div class="card-number">
-                        <input class=" form-control num" type="text" name="" id="" placeholder="رقم محفظتك للسحب">
-                    </div>
-                    <button class="request">طلب السحب</button>
+                    <form class="withdraw-data" key="orange">
+                        <div class="container">
+                            <div class="inputs ">
+                             
+                                <div class=" w-100 usd-input">
+    
+                                <h6 class="usd-icon">$</h6>
+                                <input class="usd-input  form-control w-100" type="text" name="usdvalue" required id="" placeholder=" الايداع بالدولار">
+                                </div>
+    
+                            <div class="w-100 egp-input">
+                                <h6 class="egp-icon">EGP</h6>
+                                <input class=" egp-input w-100 form-control" type="text" name="levalue" id="" placeholder=" الايداع بالجنيه">
+                            </div>
+                          </div>
+                            </div>
+                        <div class="process-number">
+                            <h3>645152632</h3>
+                            <h3>: رقم العمليه</h3>
+                        </div>
+                        <div class="card-number">
+                            <input class=" form-control num" type="text" name="number" required id="" placeholder="رقم محفظتك للسحب">
+                        </div>
+                        <button type="submit" class="request">طلب السحب</button>
+                        <h4 class="finish mb-3"></h4>
+                          
+                     </form>
                 </div>
                 <div class="pay-box" id="div4">
                     <div class="pay-heading">
@@ -219,18 +312,33 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
-                    <div class="inputs">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالدولار">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالجنيه">
-                    </div>
-                    <div class="process-number">
-                        <h3>645152632</h3>
-                        <h3>: رقم العمليه</h3>
-                    </div>
-                    <div class="card-number">
-                        <input class=" form-control num" type="text" name="" id="" placeholder="رقم محفظتك للسحب">
-                    </div>
-                    <button class="request">طلب السحب</button>
+                    <form class="withdraw-data" key="etisalat">
+                        <div class="container">
+                            <div class="inputs ">
+                             
+                                <div class=" w-100 usd-input">
+    
+                                <h6 class="usd-icon">$</h6>
+                                <input class=" usd-input form-control w-100" type="text" name="usdvalue" required id="" placeholder=" الايداع بالدولار">
+                                </div>
+    
+                            <div class="w-100 egp-input">
+                                <h6 class="egp-icon">EGP</h6>
+                                <input class=" egp-input w-100 form-control" type="text" name="levalue" id="" placeholder=" الايداع بالجنيه">
+                            </div>
+                          </div>
+                            </div>
+                        <div class="process-number">
+                            <h3>645152632</h3>
+                            <h3>: رقم العمليه</h3>
+                        </div>
+                        <div class="card-number">
+                            <input class=" form-control num" type="text" name="number" required id="" placeholder="رقم محفظتك للسحب">
+                        </div>
+                        <button type="submit" class="request">طلب السحب</button>
+                        <h4 class="finish mb-3"></h4>
+                          
+                     </form>
                 </div>
                 <div class="pay-box" id="div5">
                     <div class="pay-heading">
@@ -240,18 +348,33 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
-                    <div class="inputs">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالدولار">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالجنيه">
-                    </div>
-                    <div class="process-number">
-                        <h3>645152632</h3>
-                        <h3>: رقم العمليه</h3>
-                    </div>
-                    <div class="card-number">
-                        <input class=" form-control num" type="text" name="" id="" placeholder="رقم محفظتك للسحب">
-                    </div>
-                    <button class="request">طلب السحب</button>
+                    <form class="withdraw-data" key="we">
+                        <div class="container">
+                            <div class="inputs ">
+                             
+                                <div class=" w-100 usd-input">
+    
+                                <h6 class="usd-icon">$</h6>
+                                <input class="usd-input  form-control w-100" type="text" name="usdvalue" required id="" placeholder=" الايداع بالدولار">
+                                </div>
+    
+                            <div class="w-100 egp-input">
+                                <h6 class="egp-icon">EGP</h6>
+                                <input class=" egp-input w-100 form-control" type="text" name="levalue" id="" placeholder=" الايداع بالجنيه">
+                            </div>
+                          </div>
+                            </div>
+                        <div class="process-number">
+                            <h3>645152632</h3>
+                            <h3>: رقم العمليه</h3>
+                        </div>
+                        <div class="card-number">
+                            <input class=" form-control num" type="text" name="number" required id="" placeholder="رقم محفظتك للسحب">
+                        </div>
+                        <button type="submit" class="request">طلب السحب</button>
+                        <h4 class="finish mb-3"></h4>
+                          
+                     </form>
                 </div>
                 <div class="pay-box" id="div6">
                     <div class="pay-heading">
@@ -261,18 +384,33 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
-                    <div class="inputs">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالدولار">
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالجنيه">
-                    </div>
-                    <div class="process-number">
-                        <h3>645152632</h3>
-                        <h3>: رقم العمليه</h3>
-                    </div>
-                    <div class="card-number">
-                        <input class=" form-control num" type="text" name="" id="" placeholder="رقم محفظتك للسحب">
-                    </div>
-                    <button class="request">طلب السحب</button>
+                    <form class="withdraw-data" key="instapay">
+                        <div class="container">
+                            <div class="inputs ">
+                             
+                                <div class=" w-100 usd-input">
+    
+                                <h6 class="usd-icon">$</h6>
+                                <input class="usd-input  form-control w-100" type="text" name="usdvalue" required id="" placeholder=" الايداع بالدولار">
+                                </div>
+    
+                            <div class="w-100 egp-input">
+                                <h6 class="egp-icon">EGP</h6>
+                                <input class=" egp-input w-100 form-control" type="text" name="levalue" id="" placeholder=" الايداع بالجنيه">
+                            </div>
+                          </div>
+                            </div>
+                        <div class="process-number">
+                            <h3>645152632</h3>
+                            <h3>: رقم العمليه</h3>
+                        </div>
+                        <div class="card-number">
+                            <input class=" form-control num" type="text" name="number" required id="" placeholder="رقم محفظتك للسحب">
+                        </div>
+                        <button type="submit" class="request">طلب السحب</button>
+                        <h4 class="finish mb-3"></h4>
+                          
+                     </form>
                 </div>
                 <div class="pay-box" id="div7">
                     <div class="pay-heading">
@@ -282,6 +420,8 @@
                             <div class="pay-circle"></div>
                         </div>
                     </div>
+
+                    <form id="coinWidraw">
                     <div class="inputs">
                         <select id="currency" name="currency" class=" form-control" >
                             <option value="option1"> نوع العمله</option>
@@ -289,7 +429,7 @@
                             <option value="option2"><span>erc20 /</span> usdt</option>
                             <option value="option3"><span>erc20 /</span> busd</option>
                             <option value="option1"><span>bep20 /</span> busd </option>
-                            <option value="option2"><span>trc20 /</span> usds</option>
+                            <option value="option2"><span>trc20 /</span> usdc</option>
                             <option value="option3"> <span>erc20 /</span> usdc</option>
                             <option value="option3"><span>coin /</span> btc</option>
                             <option value="option3"><span>coin /</span> eth</option>
@@ -305,7 +445,7 @@
                             <option value="option2"> <span>coin /</span> matic</option>
                             <option value="option3"><span>erc20 /</span> dai</option>
                           </select> 
-                        <input class=" form-control" type="text" name="" id="" placeholder="قيمة السحب بالدولار">
+                        <input class=" form-control" type="text" name="coinValue" id="" placeholder=" السحب بالدولار">
                       
                     </div>
                     <div class="process-number">
@@ -313,16 +453,19 @@
                         <h3>: رقم العمليه</h3>
                     </div>
                     <div class="card-number">
-                        <input class=" form-control num" type="text" name="" id="" placeholder="  عنوان محفظة اسنلام العمله">
+                        <input class=" form-control num" type="text"  id="" placeholder="  عنوان محفظة استلام العمله">
                     </div>
-                    <button class="request">طلب السحب</button>
+                    <button class="request" type="submit">طلب السحب</button>
+                </form>
                 </div>
             </div>
         </div>
     </div>
     <script src="../js/jequery.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/links.js"></script>
     <script src="../js/withdraw.js"></script>
+    <script src="../js/deposit.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
